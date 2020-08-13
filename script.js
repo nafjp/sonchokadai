@@ -76,3 +76,32 @@ for(var n in arr){
 }
 document.write('<p>合計は'+total+'です');
 
+var obj = new Object();
+obj.data=[100,82,69,77,91];
+obj.calc=function(){
+    var total=0;
+    for (var n in this.data){
+        total+=this.data[n];
+    }
+    var average=total/5;
+    document.write('<p>合計は'+total+'です');
+    document.write('<p>平均は'+average+'です');
+
+}
+
+obj.calc();
+
+var obj = {
+    data:[100,82,69,77,91],
+    calc:function(){
+    var total=0;
+    for (var n in this.data){
+        total+=this.data[n];
+    }
+    var average=total/5;
+    document.write('<p>合計は'+total+'です');
+    document.write('<p>平均は'+average+'です');
+    }
+}
+
+obj.calc();
